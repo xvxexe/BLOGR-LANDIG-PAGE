@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+/*PRIMARY COLORS*/
+/*NEUTRAL COLORS*/
+/*NAV COLORS*/
+/*BODY COLORS*/
+body {
+  font-size: 16px;
+}
+
+#mobile {
+  display: none;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(90deg, #ff8f70, #ff3d54);
+  border-radius: 0 0 0 50px;
+  z-index: 1;
+  margin: auto;
+}
+
+header button {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background: none;
+}
+
+header button:hover {
+  cursor: pointer;
+  color: #ff7a85;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .nav-img-container {
+  position: relative;
+  z-index: -1;
+}
+
+header .nav-img-container #nav-bg-img {
+  position: fixed;
+  top: -800px;
+  right: -100px;
+  width: 100%;
+  z-index: 1;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+}
+
+header nav .left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .left-part .links {
+  padding: 0 100px;
+}
+
+header nav .left-part .links img {
+  padding: 0 10px;
+}
+
+header nav .left-part .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav .left-part .links ul li {
+  position: relative;
+  margin: 0 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header nav .left-part .links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav .left-part .links ul li .menu {
+  display: none;
+  position: absolute;
+  background: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+header nav .left-part .links ul li:hover .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav .left-part .links ul li:hover .menu ul {
+  padding: 10px;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav .left-part .links ul li:hover .menu ul li {
+  padding: 10px 0;
+}
+
+header nav .left-part .links ul li:hover .menu ul li a {
+  color: #4b5862;
+}
+
+header nav .left-part .links ul li:hover .menu ul li a:hover {
+  color: black;
+}
+
+header nav .left-part .links ul li:hover img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+header .title {
+  color: white;
+  text-align: center;
+}
+
+header .title h1 {
+  font-weight: 600;
+}
+
+header .title p {
+  padding: 20px 0;
+}
+
+header .title .title-buttons-container {
+  padding: 100px 0;
+}
+
+main {
+  z-index: 2;
+  background-color: #fff;
+}
+
+main .design-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .design-section .design-section-title {
+  text-align: center;
+  margin: 100px;
+}
+
+main .design-section .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .design-section .content-container .text-container {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .design-section .content-container .text-container h3 {
+  padding: 20px;
+}
+
+main .design-section .content-container .text-container p {
+  padding: 20px;
+  max-width: 55ch;
+}
+
+main .design-section .content-container .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -150px;
+}
+
+main .design-section .content-container .image-container img {
+  position: absolute;
+  overflow: hidden;
+  overflow: hidden;
+  right: -300px;
+}
+/*# sourceMappingURL=desktop.css.map */

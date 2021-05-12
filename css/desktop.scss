@@ -35,10 +35,13 @@ body {
 #mobile {
   display: none;
 }
+p {
+  line-height: 25px;
+}
 
 header {
   background-image: $nav-very-light-red;
-  border-radius: 0 0 0 50px;
+  border-radius: 0 0 0 100px;
   z-index: 1;
   margin: auto;
   button {
@@ -150,14 +153,17 @@ main {
     .design-section-title {
       text-align: center;
       margin: 100px;
+      font-weight: 300;
+      font-size: 30px;
     }
     .content-container {
       display: flex;
-      justify-content: flex-end;
+      width: 100%;
       .text-container {
-        width: 500px;
+        width: 50%;
         display: flex;
         flex-direction: column;
+        margin-left: 10%;
         h3 {
           padding: 20px;
         }
@@ -168,7 +174,7 @@ main {
       }
       .image-container {
         display: flex;
-        width: 1000px;
+        width: 50%;
         height: 1000px;
         position: relative;
         overflow: hidden;
@@ -176,9 +182,123 @@ main {
         top: -150px;
         img {
           position: absolute;
-          overflow: hidden;
-          overflow: hidden;
           right: -300px;
+        }
+      }
+    }
+  }
+
+  .art-infrastructure-section {
+    background-color: $body-darkgray-blue;
+    border-radius: 0 100px 0 100px;
+    display: flex;
+    justify-content: flex-end;
+    .image-container {
+      position: relative;
+      width: 30%;
+      img {
+        position: absolute;
+      }
+      #phone {
+        top: -70px;
+        z-index: 2;
+      }
+      .circles {
+        position: absolute;
+        width: 1000px;
+        height: 425px;
+        z-index: 1;
+        overflow: hidden;
+        left: -250px;
+        border-radius: 0 0 0 50%;
+        .image-circle {
+          position: relative;
+          width: 30%;
+
+          #circles {
+            position: absolute;
+            left: -100px;
+
+            top: -500px;
+          }
+        }
+      }
+    }
+    .text-container {
+      padding: 130px;
+      color: $text-white;
+      width: 40%;
+      z-index: 2;
+      h2 {
+        padding: 20px;
+      }
+      p {
+        padding: 0 20px;
+        width: 56ch;
+      }
+    }
+  }
+  .laptop-section {
+    display: flex;
+    background-color: $text-white;
+    margin-top: 150px;
+    position: relative;
+    .image-container {
+      width: 50%;
+      height: auto;
+      img {
+        position: absolute;
+        left: -270px;
+      }
+    }
+    .text-container {
+      padding: 150px;
+      width: 40%;
+      margin-top: 70px;
+      h3 {
+        padding: 30px 50px;
+      }
+      p {
+        padding: 0 50px;
+        width: 57ch;
+      }
+    }
+  }
+}
+footer {
+  background-color: $footer-bg;
+  color: $text-white;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    color: $text-white;
+    position: relative;
+    img {
+      position: absolute;
+      width: 100px;
+      margin: auto;
+      top: 50px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    h4 {
+      padding-bottom: 20px;
+    }
+    ul {
+      li {
+        list-style: none;
+        padding-top: 10px;
+
+        a {
+          text-decoration: none;
+          color: $footer-text;
+        }
+        a:hover {
+          text-decoration: underline;
         }
       }
     }

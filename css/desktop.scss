@@ -1,3 +1,6 @@
+@import url("https://fonts.google.com/specimen/Overpass?preview.text_type=custom");
+@import url("https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom");
+
 * {
   margin: 0;
   padding: 0;
@@ -30,13 +33,15 @@ $body-darkgray-blue: hsl(237, 17%, 21%);
 $body-darkdesaturated-blue: hsl(237, 23%, 32%);
 
 body {
-  font-size: 16px;
+  font-size: 20px;
+  font-family: ubuntu;
 }
 #mobile {
   display: none;
 }
 p {
-  line-height: 25px;
+  line-height: 35px;
+  word-spacing: 2px;
 }
 
 header {
@@ -46,10 +51,11 @@ header {
   margin: auto;
   button {
     color: $text-white;
-    padding: 10px 20px;
-    border-radius: 50px;
+    padding: 20px 20px;
+    border-radius: 30px;
     border: none;
     background: none;
+    font-size: 20px;
   }
   button:hover {
     cursor: pointer;
@@ -126,21 +132,25 @@ header {
           }
         }
       }
-    }
-    .log-buttons-container {
+      .log-buttons-containe {
+        .login:hover {
+          background-color: transparent;
+        }
+      }
     }
   }
   .title {
     color: $text-white;
     text-align: center;
     h1 {
-      font-weight: 600;
+      font-weight: 400;
+      font-size: 60px;
     }
     p {
       padding: 20px 0;
     }
     .title-buttons-container {
-      padding: 100px 0;
+      padding: 50px 0 100px 0;
     }
   }
 }
@@ -153,8 +163,11 @@ main {
     .design-section-title {
       text-align: center;
       margin: 100px;
-      font-weight: 300;
-      font-size: 30px;
+      h2 {
+        font-weight: 400;
+        font-size: 50px;
+        color: $primary-headings-blue;
+      }
     }
     .content-container {
       display: flex;
@@ -166,10 +179,14 @@ main {
         margin-left: 10%;
         h3 {
           padding: 20px;
+          font-weight: 500;
+          color: $primary-headings-blue;
         }
         p {
           padding: 20px;
           max-width: 55ch;
+          font-weight: 400;
+          color: $vdark-grayish-blue;
         }
       }
       .image-container {
@@ -257,10 +274,13 @@ main {
       margin-top: 70px;
       h3 {
         padding: 30px 50px;
+        color: $primary-headings-blue;
+        font-weight: 500;
       }
       p {
         padding: 0 50px;
         width: 57ch;
+        color: $vdark-grayish-blue;
       }
     }
   }

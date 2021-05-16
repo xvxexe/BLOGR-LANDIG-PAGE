@@ -1,3 +1,5 @@
+@import url("https://fonts.google.com/specimen/Overpass?preview.text_type=custom");
+@import url("https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,8 @@
 /*NAV COLORS*/
 /*BODY COLORS*/
 body {
-  font-size: 16px;
+  font-size: 20px;
+  font-family: ubuntu;
 }
 
 #mobile {
@@ -18,7 +21,8 @@ body {
 }
 
 p {
-  line-height: 25px;
+  line-height: 35px;
+  word-spacing: 2px;
 }
 
 header {
@@ -31,10 +35,11 @@ header {
 
 header button {
   color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
+  padding: 20px 20px;
+  border-radius: 30px;
   border: none;
   background: none;
+  font-size: 20px;
 }
 
 header button:hover {
@@ -144,13 +149,18 @@ header nav .left-part .links ul li:hover img {
           transform: rotate(180deg);
 }
 
+header nav .left-part .log-buttons-containe .login:hover {
+  background-color: transparent;
+}
+
 header .title {
   color: white;
   text-align: center;
 }
 
 header .title h1 {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 60px;
 }
 
 header .title p {
@@ -158,7 +168,7 @@ header .title p {
 }
 
 header .title .title-buttons-container {
-  padding: 100px 0;
+  padding: 50px 0 100px 0;
 }
 
 main {
@@ -179,8 +189,12 @@ main .design-section {
 main .design-section .design-section-title {
   text-align: center;
   margin: 100px;
-  font-weight: 300;
-  font-size: 30px;
+}
+
+main .design-section .design-section-title h2 {
+  font-weight: 400;
+  font-size: 50px;
+  color: #1f3f5b;
 }
 
 main .design-section .content-container {
@@ -204,11 +218,15 @@ main .design-section .content-container .text-container {
 
 main .design-section .content-container .text-container h3 {
   padding: 20px;
+  font-weight: 500;
+  color: #1f3f5b;
 }
 
 main .design-section .content-container .text-container p {
   padding: 20px;
   max-width: 55ch;
+  font-weight: 400;
+  color: #4b5862;
 }
 
 main .design-section .content-container .image-container {
@@ -319,11 +337,14 @@ main .laptop-section .text-container {
 
 main .laptop-section .text-container h3 {
   padding: 30px 50px;
+  color: #1f3f5b;
+  font-weight: 500;
 }
 
 main .laptop-section .text-container p {
   padding: 0 50px;
   width: 57ch;
+  color: #4b5862;
 }
 
 footer {

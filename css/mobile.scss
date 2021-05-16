@@ -1,0 +1,45 @@
+@media (max-width: 1440px) {
+  main {
+    .design-section {
+      img {
+        width: 800px;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  header {
+    nav {
+      .left-part {
+        width: 70%;
+        .links {
+          padding: 0 50px;
+          img {
+            padding: 0 1px;
+          }
+          ul {
+            li {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1044px) {
+  header {
+    nav {
+      .left-part {
+        .links {
+          padding: 0 50px;
+          ul {
+            li {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
